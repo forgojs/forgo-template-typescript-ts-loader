@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "description": "A template you can use to get started with Forgo and TypeScript",
   "dependencies": {
-    "forgo": "^0.0.21"
+    "forgo": "^0.0.23"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
