@@ -1,0 +1,15 @@
+{
+  "name": "your-forgo-app-name",
+  "private": true,
+  "version": "0.0.1",
+  "description": "A template you can use to get started with Forgo and TypeScript",
+  "dependencies": {
+    "forgo": "^0.0.21"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-typescript": "^7.12.7",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^4.1.3"
+  }
+}
