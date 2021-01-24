@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "description": "A template you can use to get started with Forgo and TypeScript",
   "scripts": {
-    "start": "npx parcel@next index.html",
-    "build": "npx parcel@next build src/index.js",
+    "start": "npx parcel index.html",
+    "build": "npx parcel build src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
