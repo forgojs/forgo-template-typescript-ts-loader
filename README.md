@@ -2,7 +2,7 @@
 
 A template you can use to get started with Forgo and TypeScript. It uses webpack as the bundler.
 
-# Getting started
+# Running
 
 Use degit to create a copy of this repo.
 
@@ -10,7 +10,7 @@ Use degit to create a copy of this repo.
 npx degit forgojs/forgo-template-typescript#main my-project
 ```
 
-And then to run it:
+Install dependencies:
 
 ```sh
 # switch to the project directory
@@ -19,7 +19,7 @@ cd my-project
 npm i
 ```
 
-# Running
+And run it:
 
 ```sh
 npm start
