@@ -7,8 +7,16 @@ function Parent(props: ParentProps) {
     render(props: ParentProps, args: ForgoRenderArgs) {
       return (
         <div>
+          <h1>Forgo App</h1>
+          <p>
+            Welcome to Forgo. You'll need to edit this file in your favorite
+            editor.
+          </p>
+          <p>Let's greet a couple of strangers.</p>
+          <ul>
           <Greeter firstName="Jeswin" />
           <Greeter firstName="Kai" />
+          </ul>
         </div>
       );
     },
@@ -20,7 +28,7 @@ type GreeterProps = { firstName: string };
 function Greeter(props: GreeterProps) {
   return {
     render(props: GreeterProps, args: ForgoRenderArgs) {
-      return <div>Hello {props.firstName}</div>;
+      return <li>Hello {props.firstName}!</li>;
     },
   };
 }
