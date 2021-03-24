@@ -7,7 +7,7 @@ A template you can use to get started with Forgo and TypeScript. It uses webpack
 Use degit to create a copy of this repo.
 
 ```sh
-npx degit forgojs/forgo-template-typescript#main my-project
+npx degit forgojs/forgo-template-typescript-ts-loader#main my-project
 ```
 
 Install dependencies:
