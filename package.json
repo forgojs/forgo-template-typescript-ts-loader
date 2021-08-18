@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "forgo": "^1.4.5"
+    "forgo": "^1.4.7"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
