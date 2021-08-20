@@ -1,3 +1,4 @@
+import * as forgo from "forgo";
 import { ForgoRenderArgs, mount } from "forgo";
 
 type AppProps = {};
