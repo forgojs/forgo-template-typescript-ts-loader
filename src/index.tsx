@@ -1,11 +1,10 @@
 import * as forgo from "forgo";
-import { ForgoRenderArgs, mount } from "forgo";
+import { Component, mount } from "forgo";
+import type { ForgoNewComponentCtor } from "forgo";
 
-type AppProps = {};
-
-function App(initialProps: AppProps) {
-  return {
-    render(props: AppProps, args: ForgoRenderArgs) {
+const App: ForgoNewComponentCtor = (_initialProps) => {
+  return new Component({
+    render(_props, _component) {
       return (
         <div style={{ width: "400px", margin: "auto", textAlign: "center" }}>
           <h1>Forgo App</h1>
@@ -15,14 +14,17 @@ function App(initialProps: AppProps) {
         </div>
       );
     },
-  };
+  });
+};
+
+interface LogoProps {
+  height: string;
+  width: string;
 }
 
-type LogoProps = { height: string; width: string };
-
-function Logo(initialProps: LogoProps) {
-  return {
-    render(props: LogoProps, args: ForgoRenderArgs) {
+const Logo: ForgoNewComponentCtor<LogoProps> = (_initialProps) => {
+  return new Component({
+    render(props, _component) {
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -45,8 +47,8 @@ function Logo(initialProps: LogoProps) {
         </svg>
       );
     },
-  };
-}
+  });
+};
 
 window.addEventListener("load", () => {
   mount(<App />, document.getElementById("root"));
